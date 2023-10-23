@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pendaftaran</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pendaftaran Klub Basket Sejoli</h1>
+        <img src="logo basket.jpg" alt="Logobasket" height="200" width="400">
+    </header>
+    <div class="body">
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="pendaftaran.html">Pendaftaran</a></li>
+                    <li><a href="tabel.html">Tabel</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <h2>Formulir Pendaftaran Sejoli</h2>
+            <form action="process_form.php" method="get">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required><br>
+
+                <label for="alamat">Alamat:</label>
+                <input type="text" id="alamat" name="alamat" required><br>
+
+                <label for="no_tlp">No Telepon:</label>
+                <input type="text" id="no_tlp" name="no_tlp" required><br>
+
+                <label for="darurat">Kontak darurat:</label>
+                <input type="text" id="darurat" name="darurat" required><br>
+
+                <label for="nik">NIK:</label>
+                <input type="text" id="nik" name="nik" required><br>
+
+                <label for="tanggal_lahir">Tanggal Lahir:</label>
+                <input type="date" id="tanggal_lahir" name="tanggal_lahir" required><br>
+
+                <label for="riwayatpenyakit">Riwayat penyakit:</label>
+                <input type="text" id="riwayatpenyakit" name="riwayatpenyakit" required><br>
+
+                <label for="posisi">posisi lapangan:</label>
+                <input type="text" id="posisi" name="posisi" required><br>
+
+                <label for="jenis_kelamin">Jenis Kelamin:</label>
+                <label for="pria">Pria</label>
+                <input type="radio" id="pria" name="jenis_kelamin" value="Pria" required>
+                <label for="wanita">Wanita</label>
+                <input type="radio" id="wanita" name="jenis_kelamin" value="Wanita" required>
+<br>
+                <input type="submit" value="Daftar">
+            </form>
+        </main>
+    </div>
+    <footer>
+        <p>&copy;ElisabetNandra 2023, Hak cipta dilindungi.</p>
+    </footer>
+</body>
+</html>

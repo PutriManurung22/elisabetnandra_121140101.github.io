@@ -1,0 +1,19 @@
+table tr:nth-child(even) {
+  background-color: white;
+}
+
+table tr:nth-child(odd) {
+  background-color: white;
+}
+
+table th {
+  background-color: #249ea0;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}

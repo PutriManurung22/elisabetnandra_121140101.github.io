@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabel</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pendaftaran Klub Basket Sejoli</h1>
+        <img src="logo basket.jpg" alt="Logobasket" height="200" width="400">
+    </header>
+    <div class="body">
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="pendaftaran.html">Pendaftaran</a></li>
+                    <li><a href="tabel.html">Tabel</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <h2>Pendaftar Klub Basket Sejoli</h2>
+            <table id="datatabel">
+                <tr>
+                    <th>Nama Lengkap</th>
+                    <th>Alamat</th>
+                    <th>No Telepon</th>
+                    <th>Kontak Darurat</th>
+                    <th>NIK</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Riwayat penyakit</th>
+                    <th>Posisi Lapangan</th>
+                    <th>Jenis Kelamin</th>
+                </tr>
+                <tr>
+                    <td>Luna Maya</td>
+                    <td>Setia Budi</td>
+                    <td>081267895463</td>
+                    <td>085678543467</td>
+                    <td>1234567890123456</td>
+                    <td>12-11-2002</td>
+                    <td>-</td>
+                    <td>Point guard</td>
+                    <td>wanita</td>
+                </tr>
+                <tr>
+                    <td>Bakrie Hasyim</td>
+                    <td>Timbang galung</td>
+                    <td>081289995566</td>
+                    <td>0888077771234</td>
+                    <td>1456903527859035</td>
+                    <td>13-12-2000</td>
+                    <td>bronkitis</td>
+                    <td>Shooting guard</td>
+                    <td>pria</td>
+                </tr>
+                <tr>
+                    <td>Yesaya Abraham</td>
+                    <td>Royal Sumatera</td>
+                    <td>085261235678</td>
+                    <td>085288903342</td>
+                    <td>5267012758935476</td>
+                    <td>30-03-2000</td>
+                    <td>Patah Tangan</td>
+                    <td>Small forward</td>
+                    <td>pria</td>
+                </tr>
+                <tr>
+                    <td>Tiomas Simanungkalit</td>
+                    <td>Helvetia</td>
+                    <td>081376181664</td>
+                    <td>085578934562</td>
+                    <td>7261098352847635</td>
+                    <td>11-11-2003</td>
+                    <td>-</td>
+                    <td>Power Forward</td>
+                    <td>pria</td>
+                </tr>
+                <tr>
+                    <td>Jessica Mayang</td>
+                    <td>Medan Johor</td>
+                    <td>081367801234</td>
+                    <td>088899991234</td>
+                    <td>0093689356111109</td>
+                    <td>06-07-2001</td>
+                    <td>cedera otot</td>
+                    <td>Center</td>
+                    <td>wanita</td>
+                </tr>
+            </table>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; ElisabetNandra 2023, Hak cipta dilindungi </p>
+    </footer>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        if(urlParams.has("nama")) {
+            const nama = urlParams.get("nama");
+            const alamat = urlParams.get("alamat");
+            const notlp = urlParams.get("no_tlp");
+            const darurat = urlParams.get("darurat");
+            const nik = urlParams.get("nik");
+            const tanggallahir = urlParams.get("tanggal_lahir");
+            const riwayatpenyakit = urlParams.get("riwayatpenyakit");
+            const posisi = urlParams.get("posisi");
+            const jeniskelamin = urlParams.get("jenis_kelamin");
+    
+            const datamhs = document.getElementById("data-table");
+    
+            const newRow = datamhs.insertRow(8);
+    
+            const namaCell = newRow.insertCell(0);
+            const alamatCell = newRow.insertCell(1);
+            const notlpCell = newRow.insertCell(2);
+            const daruratCell = newRow.insertCell(3);
+            const nikCell = newRow.insertCell(4)
+            const tanggallahirCell = newRow.insertCell(5);
+            const riwayatpenyakitCell = newRow.insertCell(6);
+            const posisiCell = newRow.insertCell(7);
+            const jeniskelaminCell = newRow.insertCell(8);
+            
+            namaCell.innerHTML = nama;
+            alamatCell.innerHTML = alamat;
+            notlpCell.innerHTML = notlp;
+            daruratCell.innerHTML = darurat;
+            nikCell.innerHTML = nik;
+            tanggallahirCell.innerHTML = tanggallahir;
+            riwayatpenyakitCell.innerHTML = riwayatpenyakit;
+            posisiCell.innerHTML = posisi;
+            jeniskelaminCell.innerHTML = jeniskelamin;
+        }
+    </script>
+</body>
+</html>
+    
+   
